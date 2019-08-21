@@ -1,0 +1,326 @@
+/* The MWFW Landing Page styles */
+
+/* Fonts
+   ========================================================================== */
+@font-face {
+  font-family: 'Gestalt';
+  src: url('/assets/fonts/Gestalt-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gestalt';
+  src: url('/assets/fonts/Gestalt-Italic.woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+body {
+  font-family: 'Gestalt', Helvetica, Arial, Sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+h1 {
+  margin: 0;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: normal;
+  border-bottom: 2px solid #0a0a0a;
+}
+.name-nowrap {
+  white-space: nowrap;
+}
+
+/*
+    The home page header style
+*/
+.home header {
+  height: 8.5vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+.home header .inner {
+  display: block;
+  transform: translateY(0%);
+  -webkit-transition: 250ms all ease;
+  transition: 250ms all ease;
+}
+/*.home header .inner:hover {
+  transform: translateY(-50%);
+  cursor: auto;
+}*/
+@media (max-width: 500px) {
+  .home header .inner:hover {
+    transform: translateY(0);
+  }
+}
+.home header h1 {
+  padding: 8px;
+  text-align: center;
+  font-size: 5.25vw;
+  letter-spacing: 0.1vw;
+  margin: 0;
+}
+.home header h1.title {
+  text-transform: uppercase;
+  -webkit-transition: 100ms ease;
+  transition: 100ms ease;
+  display: block;
+}
+.home header h1 a {
+  color: inherit;
+  cursor: pointer;
+  box-shadow: inset 0 -4px 0 0 #ffffff;
+}
+.home header h1 a:hover {
+  box-shadow: inset 0 -4px 0 0 #0a0a0a;
+}
+@media (max-width: 500px) {
+  .home header h1 {
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    font-size: 36px;
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home header {
+    height: auto;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/*
+    The figures circle_square_top
+*/
+.home a.trapezoid-1 {
+    background-image: url(/assets/imgs/trapezoid_1.png);
+    background-size: contain;
+}
+
+.home article.trapezoid-1 {
+    background-color: rgb(191, 189, 166);
+    background-color: rgb(191, 189, 166);
+}
+
+/* */
+.home a.circle-1 {
+    background-image: url(/assets/imgs/circle.png);
+    background-size: contain;
+}
+
+.home article.circle-1 {
+    background-color: rgb(179, 222, 255);
+}
+
+/* */
+.home a.circle-square-1 {
+    background-image: url(/assets/imgs/circle_square_1.png);
+    background-size: contain;
+}
+.home article.circle-square-1 {
+    background-color: rgb(131, 127, 151);
+}
+
+/* */
+.home a.trapezoid-2 {
+    background-image: url(/assets/imgs/trapezoid_2.png);
+    background-size: contain;
+}
+.home article.trapezoid-2 {
+    background-color: rgb(255, 236, 231);
+}
+
+/* */
+.home a.circle-square-2 {
+    background-image: url(/assets/imgs/circle_square_2.png);
+    background-size: contain;
+}
+.home article.circle-square-2 {
+    background-color: rgb(39, 73, 255);
+}
+
+/* */
+.home a.trapezoid-3 {
+    background-image: url(/assets/imgs/trapezoid_3.png);
+    background-size: contain;
+}
+.home article.trapezoid-3 {
+    background-color: rgb(58, 170, 251);
+}
+
+/* */
+.home a.trapezoid-4 {
+    background-image: url(/assets/imgs/trapezoid_4.png);
+    background-size: contain;
+}
+.home article.trapezoid-4 {
+    background-color: rgb(65, 144, 122);
+}
+
+/* */
+.home a.trapezoid-5 {
+    background-image: url(/assets/imgs/trapezoid_5.png);
+    background-size: contain;
+}
+.home article.trapezoid-5 {
+    background-color: rgb(227, 196, 230);
+}
+
+/*
+    The single tile styles
+*/
+.home article:hover {
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: 300ms ease-in 200ms;
+    transition: 300ms ease-in 200ms;
+}
+.home article {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  border-radius: 0%;
+  cursor: pointer;
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-transition-property: background-color 300ms ease-out 200ms;
+  -moz-transition-property: background-color 300ms ease-out 200ms;
+  -o-transition-property: background-color 300ms ease-out 200ms;
+  transition: background-color 300ms ease-in 200ms;
+}
+.home article h2 {
+  margin: 0 10%;
+  font-family: 'Arial';
+}
+@media (max-width: 500px) {
+  .home article h2 {
+    margin: 0;
+    font-size: 26px;
+  }
+}
+.home article h5 {
+  margin: 0 10%;
+  font-family: 'Arial';
+}
+@media (max-width: 500px) {
+  .home article h5 {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+.home article h5 {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home article h5 {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 500px) {
+  .home article {
+    text-align: left;
+  }
+}
+
+/*
+ The main area with tiles on the home page
+*/
+main {
+  display: inline-block;
+    height: auto;
+}
+.home main a {
+  width: 33.333%;
+  float: left;
+  display: inline-block;
+  height: 44vw;
+}
+.home main a.-hide {
+  display: none;
+}
+@media (max-width: 500px) {
+  .home main a.-hide {
+    display: block;
+  }
+}
+.home main a.home-image {
+  pointer-events: none;
+  transition: none;
+  opacity: 1;
+}
+.home main a.home-image:hover {
+  -webkit-transition: 250ms all ease;
+  transition: 250ms all ease;
+}
+.home main a.home-image figcaption {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+.home main a.home-image article {
+  border-radius: 0% !important;
+}
+@media (max-width: 750px) {
+  .home main a.home-image {
+    display: none;
+  }
+}
+.home main a.span-two {
+  width: 66.666%;
+}
+@media (min-width: 1800px) {
+  .home main a {
+    width: 16.666%;
+    height: 24vw;
+  }
+  .home main a.span-two {
+    width: 40%;
+  }
+}
+@media (max-width: 750px) {
+  .home main a {
+    width: 50%;
+    height: 62.5vw;
+  }
+}
+@media (max-width: 500px) {
+  .home main a {
+    width: 100%;
+    min-height: 33vh;
+  }
+}
