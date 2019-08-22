@@ -3,22 +3,25 @@
 /* Fonts
    ========================================================================== */
 @font-face {
-  font-family: 'Gestalt';
-  src: url('/assets/fonts/Gestalt-Regular.woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'TTSFirsNeue';
+    src: url('/assets/fonts/TTFirsNeue-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face {
-  font-family: 'Gestalt';
-  src: url('/assets/fonts/Gestalt-Italic.woff');
-  font-weight: normal;
-  font-style: italic;
+
+/*
+    Flipping text
+*/
+span.flip_V{  
+    display: inline-block; 
+    margin:0em; 
+    transform: scale(1, -1); 
 }
 
 
 body {
-  font-family: 'Gestalt', Helvetica, Arial, Sans-serif;
-  -webkit-font-smoothing: antialiased;
+    font-family: Arial, Helvetica, Sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 h1,
 h2,
@@ -26,57 +29,74 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+    font-weight: 400;
 }
 h1 {
-  margin: 0;
+    margin: 0;
 }
 em {
-  font-style: italic;
+    font-style: italic;
 }
 strong {
-  font-weight: normal;
-  border-bottom: 2px solid #0a0a0a;
+    font-weight: normal;
+    border-bottom: 2px solid #0a0a0a;
 }
 .name-nowrap {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 /*
     The home page header style
 */
 .home header {
-  height: 8.5vw;
-  overflow: hidden;
-  cursor: pointer;
+  height: 6.5vw;
+  /*
+    height: 8.5vw;
+    overflow: hidden;
+  cursor: pointer;*/
+}
+.home header .logo {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.home header .logo img {
+    max-width: 100%;
+    max-height: 100%;
 }
 .home header .inner {
-  display: block;
-  transform: translateY(0%);
-  -webkit-transition: 250ms all ease;
-  transition: 250ms all ease;
+    display: block;
+    transform: translateY(0%);
+    -webkit-transition: 250ms all ease;
+    transition: 250ms all ease;
 }
 /*.home header .inner:hover {
   transform: translateY(-50%);
   cursor: auto;
 }*/
 @media (max-width: 500px) {
-  .home header .inner:hover {
-    transform: translateY(0);
-  }
+    .home header .inner:hover {
+        transform: translateY(0);
+    }
 }
 .home header h1 {
-  padding: 8px;
-  text-align: center;
-  font-size: 5.25vw;
-  letter-spacing: 0.1vw;
-  margin: 0;
+    padding: 8px;
+    text-align: center;
+    font-size: 5.25vw;
+    letter-spacing: 0.1vw;
+    margin: 0;
 }
 .home header h1.title {
-  text-transform: uppercase;
-  -webkit-transition: 100ms ease;
-  transition: 100ms ease;
-  display: block;
+    font-family: 'TTSFirsNeue';
+    text-transform: uppercase;
+    -webkit-transition: 100ms ease;
+    transition: 100ms ease;
+    display: block;
 }
 .home header h1 a {
   color: inherit;
@@ -86,7 +106,7 @@ strong {
 .home header h1 a:hover {
   box-shadow: inset 0 -4px 0 0 #0a0a0a;
 }
-@media (max-width: 500px) {
+/*@media (max-width: 500px) {
   .home header h1 {
     padding-top: 6vh;
     padding-bottom: 6vh;
@@ -98,7 +118,7 @@ strong {
   .home header {
     height: auto;
   }
-}
+}*/
 
 a {
   color: inherit;
@@ -115,6 +135,11 @@ body {
 /*
     The figures circle_square_top
 */
+.home main a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .home a.trapezoid-1 {
     background-image: url(/assets/imgs/trapezoid_1.png);
     background-size: contain;
@@ -122,13 +147,11 @@ body {
 
 .home article.trapezoid-1 {
     background-color: rgb(191, 189, 166);
-    background-color: rgb(191, 189, 166);
 }
 
 /* */
 .home a.circle-1 {
     background-image: url(/assets/imgs/circle.png);
-    background-size: contain;
 }
 
 .home article.circle-1 {
@@ -138,7 +161,6 @@ body {
 /* */
 .home a.circle-square-1 {
     background-image: url(/assets/imgs/circle_square_1.png);
-    background-size: contain;
 }
 .home article.circle-square-1 {
     background-color: rgb(131, 127, 151);
@@ -147,7 +169,6 @@ body {
 /* */
 .home a.trapezoid-2 {
     background-image: url(/assets/imgs/trapezoid_2.png);
-    background-size: contain;
 }
 .home article.trapezoid-2 {
     background-color: rgb(255, 236, 231);
@@ -156,7 +177,6 @@ body {
 /* */
 .home a.circle-square-2 {
     background-image: url(/assets/imgs/circle_square_2.png);
-    background-size: contain;
 }
 .home article.circle-square-2 {
     background-color: rgb(39, 73, 255);
@@ -165,7 +185,6 @@ body {
 /* */
 .home a.trapezoid-3 {
     background-image: url(/assets/imgs/trapezoid_3.png);
-    background-size: contain;
 }
 .home article.trapezoid-3 {
     background-color: rgb(58, 170, 251);
@@ -174,7 +193,6 @@ body {
 /* */
 .home a.trapezoid-4 {
     background-image: url(/assets/imgs/trapezoid_4.png);
-    background-size: contain;
 }
 .home article.trapezoid-4 {
     background-color: rgb(65, 144, 122);
@@ -183,7 +201,6 @@ body {
 /* */
 .home a.trapezoid-5 {
     background-image: url(/assets/imgs/trapezoid_5.png);
-    background-size: contain;
 }
 .home article.trapezoid-5 {
     background-color: rgb(227, 196, 230);
@@ -303,6 +320,10 @@ main {
 .home main a.span-two {
   width: 66.666%;
 }
+
+/*
+    Adjusting elements sizes depending on screen width
+*/
 @media (min-width: 1800px) {
   .home main a {
     width: 16.666%;
