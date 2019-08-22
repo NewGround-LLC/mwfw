@@ -49,7 +49,7 @@ strong {
     The home page header style
 */
 .home header {
-  height: 8.5vw;
+  height: 6.5vw;
   /*
     height: 8.5vw;
     overflow: hidden;
@@ -138,18 +138,18 @@ body {
 .home main a {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200% 200%;
-    -webkit-transition-property: background-size 300ms ease-out 200ms;
-    -moz-transition-property: background-size 300ms ease-out 200ms;
-    -o-transition-property: background-size 300ms ease-out 200ms;
-    transition: background-size 300ms ease-in 200ms;
+    background-size: 300% 300%;
+    -webkit-transition-property: background-size 150ms ease-out 100ms;
+    -moz-transition-property: background-size 150ms ease-out 100ms;
+    -o-transition-property: background-size 150ms ease-out 100ms;
+    transition: background-size 150ms ease-in 100ms;
 }
 .home a.trapezoid-1 {
     background-image: url(/assets/imgs/trapezoid_1.png);
 }
 
 .home article.trapezoid-1 {
-    background-color: #B3B297;
+    background-color: #C0BEA8;
 }
 
 /* */
@@ -158,7 +158,7 @@ body {
 }
 
 .home article.circle-1 {
-    background-color: #ABD5F2;
+    background-color: #B8DCF5;
 }
 
 /* */
@@ -166,7 +166,7 @@ body {
     background-image: url(/assets/imgs/circle_square_1.png);
 }
 .home article.circle-square-1 {
-    background-color: #746D87;
+    background-color: #878199;
 }
 
 /* */
@@ -174,7 +174,7 @@ body {
     background-image: url(/assets/imgs/trapezoid_2.png);
 }
 .home article.trapezoid-2 {
-    background-color: #FCE5E1;
+    background-color: #FDEAE7;
 }
 
 /* */
@@ -182,7 +182,7 @@ body {
     background-image: url(/assets/imgs/circle_square_2.png);
 }
 .home article.circle-square-2 {
-    background-color: #404E9B;
+    background-color: #5164AC;
 }
 
 /* */
@@ -190,7 +190,7 @@ body {
     background-image: url(/assets/imgs/trapezoid_3.png);
 }
 .home article.trapezoid-3 {
-    background-color: #4E94D2;
+    background-color: #5FA6DB;
 }
 
 /* */
@@ -198,7 +198,7 @@ body {
     background-image: url(/assets/imgs/trapezoid_4.png);
 }
 .home article.trapezoid-4 {
-    background-color: #3D826B;
+    background-color: #4B937E;
 }
 
 /* */
@@ -206,7 +206,7 @@ body {
     background-image: url(/assets/imgs/trapezoid_5.png);
 }
 .home article.trapezoid-5 {
-    background-color: #D8B6D6;
+    background-color: #E0C5DE;
 }
 
 /*
@@ -214,14 +214,14 @@ body {
 */
 .home article:hover {
     background-color: rgba(255,255,255,0);
-    -webkit-transition: 300ms ease-in 200ms;
-    transition: 300ms ease-in 200ms;
+    -webkit-transition: 10ms ease-in 100ms;
+    transition: 10ms ease-in 100ms;
 }
 
 .home main a:hover {
     background-size: 100% 100%;
-    -webkit-transition: 300ms ease-in 200ms;
-    transition: 300ms ease-in 200ms;
+    -webkit-transition: 100ms ease-in 150ms;
+    transition: 100ms ease-in 150ms;
 }
 
 .home article {
@@ -234,10 +234,8 @@ body {
     cursor: pointer;
     background-size: cover;
     background-position: 50% 50%;
-    -webkit-transition-property: background-color 300ms ease-out 200ms;
-    -moz-transition-property: background-color 300ms ease-out 200ms;
-    -o-transition-property: background-color 300ms ease-out 200ms;
-    transition: background-color 300ms ease-in 200ms;
+    -webkit-transition-property: background-color 10ms ease-out 300ms;
+    transition: background-color 10ms ease-in 300ms;*/
 }
 .home article h2 {
   margin: 0 10%;
@@ -284,7 +282,7 @@ body {
  The main area with tiles on the home page
 */
 main {
-    display: inline-block;
+    display: block;
     height: auto;
     width:100%;
 }
