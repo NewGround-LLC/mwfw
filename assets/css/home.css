@@ -136,13 +136,16 @@ body {
     The figures circle_square_top
 */
 .home main a {
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 200% 200%;
+    -webkit-transition-property: background-size 300ms ease-out 200ms;
+    -moz-transition-property: background-size 300ms ease-out 200ms;
+    -o-transition-property: background-size 300ms ease-out 200ms;
+    transition: background-size 300ms ease-in 200ms;
 }
 .home a.trapezoid-1 {
     background-image: url(/assets/imgs/trapezoid_1.png);
-    background-size: contain;
 }
 
 .home article.trapezoid-1 {
@@ -207,44 +210,34 @@ body {
 }
 
 /*
-    The scalling animation
-*/
-@keyframes slide-in {
-  0% {
-    opacity: 1;
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-/*
     The single tile styles
 */
 .home article:hover {
     background-color: rgba(255,255,255,0);
-    z-index: 1;
-    animation: slide-in .5s ease-out forwards;
-   /* -webkit-transition: 300ms ease-in 200ms;
-    transition: 300ms ease-in 200ms;*/
+    -webkit-transition: 300ms ease-in 200ms;
+    transition: 300ms ease-in 200ms;
+}
+
+.home main a:hover {
+    background-size: 100% 100%;
+    -webkit-transition: 300ms ease-in 200ms;
+    transition: 300ms ease-in 200ms;
 }
 
 .home article {
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  text-align: center;
-  position: relative;
-  border-radius: 0%;
-  cursor: pointer;
-  background-size: cover;
-  background-position: 50% 50%;
-  -webkit-transition-property: background-color 300ms ease-out 200ms;
-  -moz-transition-property: background-color 300ms ease-out 200ms;
-  -o-transition-property: background-color 300ms ease-out 200ms;
-  transition: background-color 300ms ease-in 200ms;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 0%;
+    cursor: pointer;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-transition-property: background-color 300ms ease-out 200ms;
+    -moz-transition-property: background-color 300ms ease-out 200ms;
+    -o-transition-property: background-color 300ms ease-out 200ms;
+    transition: background-color 300ms ease-in 200ms;
 }
 .home article h2 {
   margin: 0 10%;
