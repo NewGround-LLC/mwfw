@@ -3,19 +3,29 @@
 /* Fonts
    ========================================================================== */
 @font-face {
-    font-family: 'TTSFirsNeue';
-    src: url('/assets/fonts/TTFirsNeue-Regular.woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'TTFirsNeue-Regular';
+	src: url('/assets/fonts/tt-firs-neue-regular.eot');
+	src: url('/assets/fonts/tt-firs-neue-regular.eot?#iefix') format('embedded-opentype'),
+             url('/assets/fonts/tt-firs-neue-regular.woff2') format('woff2'),
+	     url('/assets/fonts/tt-firs-neue-regular.woff') format('woff'),
+	     url('/assets/fonts/tt-firs-neue-regular.ttf') format('truetype'),
+	     url('tt-firs-neue-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /*
     Flipping text
 */
-span.flip_V{  
+span.logo_preffix{  
     display: inline-block; 
     margin:0em; 
-    transform: scale(1, -1); 
+    transform: scale(1, -1);
+}
+span.logo_suffix{
+    display: inline-block; 
+    margin:0em; 
+    transform: translateY(8%);
 }
 
 
@@ -49,11 +59,11 @@ strong {
     The home page header style
 */
 .home header {
-  height: 6.5vw;
-  /*
-    height: 8.5vw;
+  /*height: 6.5vw;
+  */
+    height: 8vw;
     overflow: hidden;
-  cursor: pointer;*/
+    cursor: default;
 }
 .home header .logo {
     height: inherit;
@@ -92,7 +102,7 @@ strong {
     margin: 0;
 }
 .home header h1.title {
-    font-family: 'TTSFirsNeue';
+    font-family: 'TTFirsNeue-Regular';
     text-transform: uppercase;
     -webkit-transition: 100ms ease;
     transition: 100ms ease;
@@ -214,14 +224,14 @@ body {
 */
 .home article:hover {
     background-color: rgba(255,255,255,0);
-    -webkit-transition: 10ms ease-in 100ms;
-    transition: 10ms ease-in 100ms;
+    -webkit-transition: 10ms ease 10ms;
+    transition: 10ms ease 10ms;
 }
 
 .home main a:hover {
     background-size: 100% 100%;
-    -webkit-transition: 100ms ease-in 150ms;
-    transition: 100ms ease-in 150ms;
+    -webkit-transition: 100ms ease 10ms;
+    transition: 100ms ease 10ms;
 }
 
 .home article {
@@ -234,8 +244,8 @@ body {
     cursor: pointer;
     background-size: cover;
     background-position: 50% 50%;
-    -webkit-transition-property: background-color 10ms ease-out 300ms;
-    transition: background-color 10ms ease-in 300ms;*/
+    -webkit-transition-property: background-color 10ms ease-out 200ms;
+    transition: background-color 10ms ease-in 200ms;*/
 }
 .home article h2 {
   margin: 0 10%;
