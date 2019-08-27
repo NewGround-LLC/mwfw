@@ -61,30 +61,15 @@ strong {
 .home header {
   /*height: 6.5vw;
   */
-    height: 8.0vw;
+    height: 8.5vw;
     overflow: hidden;
     cursor: default;
-}
-.home header .logo {
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 6vw;
-    padding-right: 6vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-.home header .logo img {
-    max-width: 100%;
-    max-height: 100%;
 }
 .home header .inner {
     display: block;
     transform: translateY(0%);
     -webkit-transition: 250ms all ease;
     transition: 250ms all ease;
-    margin-top: 0.8vh;
 }
 .home header .inner:hover {
     transform: translateY(-50%);
@@ -98,7 +83,7 @@ strong {
 }
 .home header h1 {
     font-family: 'TTFirsNeue-Regular';
-    padding: 8px;
+    padding: 6px;
     text-align: center;
     font-size: 5.25vw;
     letter-spacing: 0.1vw;
@@ -118,24 +103,28 @@ strong {
 .home header h1 a:hover {
   box-shadow: inset 0 -4px 0 0 #0a0a0a;
 }
+@media (max-width: 750px) {
+    .home header h1 {
+        padding: 4px;
+    }
+}
 @media (max-width: 500px) {
     .home header h1 {
         padding-top: 6vh;
         padding-bottom: 6vh;
-        font-size: 32px;
+        font-size: 30px;
         display: none;
     }
     span.logo_suffix{
         display: inline-block; 
         margin:0em; 
-        transform: translateY(10%);
+        transform: translateY(6%);
+    }
+    .home header {
+        height: auto;
     }
 }
-@media (max-width: 500px) {
-  .home header {
-    height: auto;
-  }
-}
+
 
 a {
   color: inherit;
@@ -166,7 +155,7 @@ body {
 }
 
 .home article.trapezoid-1 {
-    background-color: #C0BEA8;
+    background-color: #BEBDA8;
 }
 
 /* */
@@ -175,7 +164,7 @@ body {
 }
 
 .home article.circle-1 {
-    background-color: #B8DCF5;
+    background-color: #B3E0FE;
 }
 
 /* */
@@ -183,7 +172,7 @@ body {
     background-image: url(/assets/imgs/circle_square_1.png);
 }
 .home article.circle-square-1 {
-    background-color: #878199;
+    background-color: #837F97;
 }
 
 /* */
@@ -191,7 +180,7 @@ body {
     background-image: url(/assets/imgs/trapezoid_2.png);
 }
 .home article.trapezoid-2 {
-    background-color: #FDEAE7;
+    background-color: #FDEDE9;
 }
 
 /* */
@@ -199,7 +188,7 @@ body {
     background-image: url(/assets/imgs/circle_square_2.png);
 }
 .home article.circle-square-2 {
-    background-color: #5164AC;
+    background-color: #2952FB;
 }
 
 /* */
@@ -207,7 +196,7 @@ body {
     background-image: url(/assets/imgs/trapezoid_3.png);
 }
 .home article.trapezoid-3 {
-    background-color: #5FA6DB;
+    background-color: #41ADF9;
 }
 
 /* */
@@ -215,7 +204,7 @@ body {
     background-image: url(/assets/imgs/trapezoid_4.png);
 }
 .home article.trapezoid-4 {
-    background-color: #4B937E;
+    background-color: #428F7A;
 }
 
 /* */
@@ -223,7 +212,7 @@ body {
     background-image: url(/assets/imgs/trapezoid_5.png);
 }
 .home article.trapezoid-5 {
-    background-color: #E0C5DE;
+    background-color: #E0C5E5;
 }
 
 /*
