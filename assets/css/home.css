@@ -117,11 +117,6 @@ strong {
         font-size: 24px;
         display: none;
     }
-    span.logo_suffix{
-        display: inline-block; 
-        margin:0em; 
-        transform: translateY(6%);
-    }
     .home header {
         height: auto;
     }
