@@ -112,6 +112,8 @@ strong {
     .home header h1 {
         padding-top: 6vh;
         padding-bottom: 6vh;
+        padding-left: 0px;
+        padding-right: 0px;
         font-size: 30px;
         display: none;
     }
