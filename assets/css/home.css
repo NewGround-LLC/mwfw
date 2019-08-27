@@ -61,7 +61,7 @@ strong {
 .home header {
   /*height: 6.5vw;
   */
-    height: 8vw;
+    height: 8.0vw;
     overflow: hidden;
     cursor: default;
 }
@@ -84,29 +84,31 @@ strong {
     transform: translateY(0%);
     -webkit-transition: 250ms all ease;
     transition: 250ms all ease;
+    margin-top: 0.8vh;
 }
-/*.home header .inner:hover {
-  transform: translateY(-50%);
-  cursor: auto;
-}*/
+.home header .inner:hover {
+    transform: translateY(-50%);
+    cursor: auto;
+    margin-top: 0vh;
+}
 @media (max-width: 500px) {
     .home header .inner:hover {
         transform: translateY(0);
     }
 }
 .home header h1 {
+    font-family: 'TTFirsNeue-Regular';
     padding: 8px;
     text-align: center;
     font-size: 5.25vw;
     letter-spacing: 0.1vw;
     margin: 0;
 }
-.home header h1.title {
-    font-family: 'TTFirsNeue-Regular';
+.home header h1.title {  
     text-transform: uppercase;
     -webkit-transition: 100ms ease;
     transition: 100ms ease;
-    display: block;
+    display: block; 
 }
 .home header h1 a {
   color: inherit;
@@ -116,19 +118,24 @@ strong {
 .home header h1 a:hover {
   box-shadow: inset 0 -4px 0 0 #0a0a0a;
 }
-/*@media (max-width: 500px) {
-  .home header h1 {
-    padding-top: 6vh;
-    padding-bottom: 6vh;
-    font-size: 36px;
-    display: none;
-  }
+@media (max-width: 500px) {
+    .home header h1 {
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+        font-size: 32px;
+        display: none;
+    }
+    span.logo_suffix{
+        display: inline-block; 
+        margin:0em; 
+        transform: translateY(10%);
+    }
 }
 @media (max-width: 500px) {
   .home header {
     height: auto;
   }
-}*/
+}
 
 a {
   color: inherit;
@@ -149,10 +156,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 300% 300%;
-    -webkit-transition-property: background-size 150ms ease-out 100ms;
-    -moz-transition-property: background-size 150ms ease-out 100ms;
-    -o-transition-property: background-size 150ms ease-out 100ms;
-    transition: background-size 150ms ease-in 100ms;
+    -webkit-transition-property: background-size 180ms ease-out 20ms;
+    -moz-transition-property: background-size 180ms ease-out 20ms;
+    -o-transition-property: background-size 180ms ease-out 20ms;
+    transition: background-size 180ms ease-in 20ms;
 }
 .home a.trapezoid-1 {
     background-image: url(/assets/imgs/trapezoid_1.png);
@@ -230,8 +237,8 @@ body {
 
 .home main a:hover {
     background-size: 100% 100%;
-    -webkit-transition: 100ms ease 10ms;
-    transition: 100ms ease 10ms;
+    -webkit-transition: 130ms ease 10ms;
+    transition: 130ms ease 10ms;
 }
 
 .home article {
